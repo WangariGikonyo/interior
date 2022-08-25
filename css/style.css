@@ -6,9 +6,44 @@ body{
     padding: 20px 77px;
 
 }
+.nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.nav .links{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    justify-content: space-between;
+    width: 500px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.links .home{
+    text-decoration: underline;
+}
+.nav .links i{
+    display: none;
+}
+.nav .button button{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-family: Crimson Pro;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    height: 32px;
+    width:102px;
+   
+}
 .section-two{
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 100px;
 }
 .section-two .content{
     display: flex;
