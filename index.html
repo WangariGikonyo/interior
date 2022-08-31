@@ -12,19 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css" integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class=" nav ">
         <div class="button">
             <button>This Interior</button>
         </div>
-        <div class="links">
-            <a class="home">Home</a>
-            <a>Collection</a>
-            <a>About</a>
-            <a>Contact</a>
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <div class="links" id="my-links">
+            <div class="list">
+                <a class="home ">Home</a>
+                <a >Collection</a>
+                <a >About</a>
+                <a >Contact</a>
+            </div>
+            
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
     </div>
     <div class="section-two">
         <div class=" content">
@@ -55,6 +63,14 @@
     <div class="footer">
         Created by <a class="user-name" href="https://devchallenges.io/portfolio/WangariGikonyo">Wangari Gikonyo</a> - <a class="site-name" href="https://devchallenges.io">devchallenges.io</a>
     </div>
-    
+
+    <script>
+        const toggleButton = document.getElementsByClassName('icon')[0]
+        const navbarLinks = document.getElementsByClassName('links')[0]
+
+        toggleButton.addEventListener('click', ()=>{
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
